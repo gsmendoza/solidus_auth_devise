@@ -6,6 +6,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 branch = ENV.fetch('SOLIDUS_BRANCH', 'master')
 gem 'solidus', github: 'solidusio/solidus', branch: branch
 
+gem 'solidus_dev_support',
+  github: 'gsmendoza/solidus_dev_support',
+  branch: 'gsmendoza/eng-342-fix-window-resizing-of'
+
 # Needed to help Bundler figure out how to resolve dependencies,
 # otherwise it takes forever to resolve them.
 # See https://github.com/bundler/bundler/issues/6677
