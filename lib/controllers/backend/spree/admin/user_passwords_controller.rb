@@ -6,6 +6,7 @@ class Spree::Admin::UserPasswordsController < Devise::PasswordsController
   include Spree::Core::ControllerHelpers::Auth
   include Spree::Core::ControllerHelpers::Common
   include Spree::Core::ControllerHelpers::Store
+  include Spree::Admin::SetsUserLanguageLocaleKey
 
   helper 'spree/admin/navigation'
   layout 'spree/layouts/admin'
